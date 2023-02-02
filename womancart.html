@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            display: flex;
+            /* border: 2px solid #ff0000; */
+            gap: 20px;
+            margin: auto;
+            position: fixed;
+            left: 20px;
+            top: 0px;
+            background-color: #fff;
+            width: 100%;
+        }
+        #logo{
+             
+            width: 150px;
+            height: 50px;
+            /* border: 2px solid blue; */
+        }
+        #nav>h5{
+            /* border: 2px solid orange;  */
+            cursor: pointer;
+        }
+        .red{
+            color:#B71C1C;
+        }
+        #flag{
+            width: 15px;
+            height: 15px;
+        }
+        #lastdiv{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            font-size: 18px;
+            margin-left: 190px;
+          
+            
+        }
+        #maindiv{
+            display: flex;
+            margin: auto;
+            /* border: 2px solid #ff0000;  */
+            width: 95%;
+            
+        }
+        #div1{
+            width: 20%;
+            /* border: 2px solid #ff0000; */
+        }
+        #div2{
+           width: 80%;
+           margin-top: 50px;
+           /* border: 2px solid #ff0000;  */
+        }
+        #cards{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width: 100%;
+            margin: auto;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        #cards img{
+            width: 80%;
+            height: 290px;
+            margin-top: 15px;
+            /* border: 2px solid orange */
+
+            
+            
+        }
+        #cards>div{
+            width: 275px;
+            height: 500px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            /* border: 2px solid orange; */
+        }
+        .lightcolor{
+            margin-top: -10px;
+        }  
+        .btn{
+            display: flex;
+            justify-content: space-between;
+            width: 85%;
+            /* border: 2px solid orange; */
+            margin: auto;
+            margin-bottom: 10px;
+            margin-top: -10px;
+            
+            
+        } 
+        .btn>button{
+            /* margin-top: 20PX;  */
+            padding: 10px; 
+            font-size: 14px;
+             letter-spacing: 1px;        
+              
+            border: 1px solid #546E7A
+              
+        } 
+        .add{
+            background-color: #81D4FA;
+
+        }
+        .add1{
+            background-color:#FFD54F; 
+
+        }
+        .btn>button:hover{
+            background-color: red;
+            color: white;
+
+
+        }
+        .red5{
+            display: flex;
+            margin-left: 10px;
+            width: 70%;
+            margin: auto;
+            margin-top: -25px;
+            /* border: 2px solid orange; */
+
+        }
+        .red2{
+            color: #B71C1C;
+
+        }
+        .red6{
+            margin-top: -10px;
+        }
+        #S1:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S2:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S3:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S4:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S5:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S6:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S7:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S8:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S9:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S10:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S11:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S12:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S13:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S14:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S15:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S16:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S17:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S18:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S19:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        #S20:hover{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <img  id="logo" src="https://cdn.modesens.com/static/img/20190228newlogo-black.svg" alt="">
+        <h5 id="woman">WOMEN</h5>
+        <h5>MEN</h5>
+        <h5>BEAUTY</h5>
+        <h5>KID</h5>
+        <h5 id="home">HOME</h5>
+        <h5>DESIGNERS</h5>
+        <h5>COMMUNITY</h5>
+        <h5>WHY MODESENS</h5>
+        <h5 class="red">SALE</h5>
+        <h5 class="red">GIFT GUIDE</h5>
+        <!-- <h5 style="color: #FFD54F;">CART</h5> -->
+        <a href="./favourites.html"><h5>CART</h5></a>      
+        
+        <div id="lastdiv">
+            <!-- <img id="flag" src="https://th.bing.com/th/id/OIP.CdcmTZIBwzY5PGHWZUTcGQHaFQ?w=232&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">  
+            <i class="fa-solid fa-bag-shopping"></i>           
+            <i class="fa-solid fa-cart-shopping"></i>        
+            <i class="fa-regular fa-user"></i> -->
+            <!-- <div style="display: flex;">  <i id="icon" class="fa-solid fa-magnifying-glass"></i> <p style="font-weight: 400;">SEARCH</p></div>
+           -->
+           
+        </div>
+    </div>
+
+        <div id="maindiv">
+
+            <div id="div1">
+                <h5>MODESENS/SHOP/HOME</h5>
+
+            </div>
+            <div id="div2">
+                <h1>Designer Home/Designer Pet Accessories/Women's Fashion & Designer Sale, Up To 70% Off</h1>
+                <h5>Shop designer home with price comparison across 500+ stores in one place. Discover the latest designer home at ModeSens.</h5>
+                
+                    
+                  <div id="cards">
+                    <div id="S1">
+                        <img src="https://cdn.modesens.com/product/39036350_2?w=400" alt="">
+                        <h3>VERSACE</h3>
+                        <P class="lightcolor">Medusa Red Porcelain Scented Votive</P>
+                        <h3 class="red6">$318 - $395</h3>
+                        <h4 class="lightcolor" >Compare 6 store</h4>
+                        <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                    </div>
+                    <div id="S2">
+                        <img src="https://cdn.modesens.com/product/42958066?w=400" alt="">
+                        <h3>VERSACE</h3>
+                        <P class="lightcolor"> Porcelain Scented Candle  </P>
+                        <h3 class="red6">$318 - $395</h3>
+                        <h4 class="lightcolor" >Compare 6 store</h4>
+                        <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                    </div>
+                    <div id="S3">
+                        <img src="https://cdn.modesens.com/product/54717913_2?w=400" alt="">
+                        <h3>VERSACE</h3>
+                        <P class="lightcolor">Studded Medusa Head Cushion </P>
+                        <h3 class="red6" >$318 - $395</h3>
+                        <h4 class="lightcolor" >Compare 5 store</h4>
+                        <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                    </div>
+                    <div id="S4">
+                        <img src="https://cdn.modesens.com/product/40880271_2?w=400" alt="">
+                        <h3>VERSACE</h3>
+                        <P class="lightcolor">Black Baroque Print Rugby Ball</P>
+                        <h3  class="red6">$318 - $395</h3>
+                        <h4 class="lightcolor" >Compare 5 store</h4>
+                        <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                    </div>
+                    
+                    <!-- ------------------------------------------------------------------------------------------ -->
+                    
+                        <div id="S9">
+                            <img src="https://cdn.modesens.com/availability/53902355?w=400" alt="">
+                            <h3>MONOCLER</h3>
+                            <P class="lightcolor">Ledi Hooded</P>
+                            <div class="red5"><h3 class="red2">$632 (29%OFF)</h3><h3 >-$1370</h3></div>
+                            <h4 class="lightcolor" >Compare 15 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <div id="S10">
+                            <img src="https://cdn.modesens.com/availability/56830338?w=400" alt="">
+                            <h3>MONOCLER</h3>
+                            <P class="lightcolor">Moscov Faux </P>
+                            <div class="red5"><h3 class="red2">$406 (35%OFF)</h3><h3>-$904</h3></div>
+                            <h4 class="lightcolor" >Compare 13 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <div id="S11">
+                            <img src="https://cdn.modesens.com/product/10881690_51?w=400" alt="">
+                            <h3>BALMAIN</h3>
+                            <P class="lightcolor">Double-breasted</P>
+                            <div class="red5"><h3 class="red2">$632 (41%OFF)</h3><h3>-$2808</h3></div>
+                            <h4 class="lightcolor" >Compare 11 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <div id="S12">
+                            <img src="https://cdn.modesens.com/availability/54375340?w=400" alt="">
+                            <h3>SAINT</h3>
+                            <P class="lightcolor">Leather Biker</P>
+                            <div class="red5"><h3 class="red2">$632 (30%OFF)</h3><h3>-$5490</h3></div>
+                            <h4 class="lightcolor" >Compare 12 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <!-- -------------------------------------------------------------- -->
+                    <div id="S5">
+                        <img src="https://cdn.modesens.com/product/60321444_1?w=400" alt="">
+                        <h3>VERSACE</h3>
+                        <P class="lightcolor">Medusa Red Porcelain Scented Votive</P>
+                        <h3 class="red6">$318 - $395</h3>
+                        <h4 class="lightcolor" >Compare 6 store</h4>
+                        <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                    </div>
+                    <div id="S6">
+                        <img src="https://cdn.modesens.com/availability/54443075?w=400" alt="">
+                        <h3>VERSACE</h3>
+                        <P class="lightcolor"> Porcelain Scented Candle In Gold,black </P>
+                        <h3 class="red6">$318 - $395</h3>
+                        <h4 class="lightcolor" >Compare 6 store</h4>
+                        <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                    </div>
+                    <div id="S7">
+                        <img src="https://cdn.modesens.com/product/32112107_1?w=400" alt="">
+                        <h3>VERSACE</h3>
+                        <P class="lightcolor">Studded Sequinned Medusa Head Cushion </P>
+                        <h3 class="red6">$318 - $395</h3>
+                        <h4 class="lightcolor" >Compare 5 store</h4>
+                        <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                    </div>
+                    <div id="S8">
+                        <img src="https://cdn.modesens.com/availability/52172133?w=400" alt="">
+                        <h3>VERSACE</h3>
+                        <P class="lightcolor">Black Baroque Print Rugby Ball</P>
+                        <h3 class="red6">$318 - $395</h3>
+                        <h4 class="lightcolor" >Compare 5 store</h4>
+                        <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                    </div>
+                        <!-- ------------------------------------------------------------------------------------- -->
+                        <div id="S13">
+                            <img src="https://cdn.modesens.com/availability/51749239_1?w=400" alt="">
+                            <h3>MONOCLER</h3>
+                            <P class="lightcolor">Ledi Hooded</P>
+                            <div class="red5"><h3 class="red2">$632 (29%OFF)</h3><h3 >-$1370</h3></div>
+                            <h4 class="lightcolor" >Compare 15 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <div id="S14">
+                            <img src="https://cdn.modesens.com/product/31814674_31?w=400" alt="">
+                            <h3>GIVENCHY</h3>
+                            <P class="lightcolor">Moscov Faux </P>
+                            <div class="red5"><h3 class="red2">$406 (35%OFF)</h3><h3>-$904</h3></div>
+                            <h4 class="lightcolor" >Compare 13 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <div id="S15">
+                            <img src="https://cdn.modesens.com/availability/53904218?w=400" alt="">
+                            <h3>MONCLER GRENOBLE</h3>
+                            <P class="lightcolor">Double-breasted</P>
+                            <div class="red5"><h3 class="red2">$632 (41%OFF)</h3><h3>-$2808</h3></div>
+                            <h4 class="lightcolor" >Compare 11 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <div id="S16">
+                            <img src="https://cdn.modesens.com/product/61099098_2?w=400" alt="">
+                            <h3>LEMAIRE</h3>
+                            <P class="lightcolor">Leather Biker</P>
+                            <div class="red5"><h3 class="red2">$632 (30%OFF)</h3><h3>-$5490</h3></div>
+                            <h4 class="lightcolor" >Compare 12 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <!-- ------------------------------------------------------------------------------------------- -->
+                        <div id="S17">
+                            <img src="https://cdn.modesens.com/availability/46345399?w=400" alt="">
+                            <h3>MONOCLER</h3>
+                            <P class="lightcolor">Ledi Hooded</P>
+                            <div class="red5"><h3 class="red2">$632 (29%OFF)</h3><h3 >-$1370</h3></div>
+                            <h4 class="lightcolor" >Compare 15 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <div id="S18">
+                            <img src="https://cdn.modesens.com/availability/51626675?w=400" alt="">
+                            <h3>GIVENCHY</h3>
+                            <P class="lightcolor">Moscov Faux </P>
+                            <div class="red5"><h3 class="red2">$406 (35%OFF)</h3><h3>-$904</h3></div>
+                            <h4 class="lightcolor" >Compare 13 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <div id="S19">
+                            <img src="https://img.ssensemedia.com/images/222404M668002_1/yellow-and-black-barocco-pet-bed.jpg" alt="">
+                            <h3>MONCLER GRENOBLE</h3>
+                            <P class="lightcolor">Double-breasted</P>
+                            <div class="red5"><h3 class="red2">$632 (41%OFF)</h3><h3>-$2808</h3></div>
+                            <h4 class="lightcolor" >Compare 11 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                        <div id="S20">
+                            <img src="https://cdn.modesens.com/product/25888762_1?w=400" alt="">
+                            <h3>LEMAIRE</h3>
+                            <P class="lightcolor">Leather Biker</P>
+                            <div class="red5"><h3 class="red2">$632 (30%OFF)</h3><h3>-$5490</h3></div>
+                            <h4 class="lightcolor" >Compare 12 store</h4>
+                            <div class="btn"><button id="addbtn" class="add">ADD TO CART</button><button class="add1">BUY NOW</button></div>
+                        </div>
+                  </div>
+                  
+                  
+                
+
+
+            </div>
+        </div>
+               
+    
+</body>
+<script>
+    let home=document.getElementById("home");
+    let woman=document.getElementById("woman");
+    
+    let btn=document.getElementsByClassName("add"); 
+    let buybtn=document.getElementsByClassName("add1");
+
+    home.addEventListener("click",()=>{
+          window.location="./index.html"
+    });
+    woman.addEventListener("click",()=>{
+          window.location="./woman.html"
+    });
+    // btn.addEventListener("click",()=>{
+    //       alert("ADD TO CART")
+    // });
+    let favourites=[];
+    
+ for(let x=0;x<buybtn.length;x++){
+        buybtn[x].addEventListener("click",()=>{
+            window.location = "./buy.html"
+        })
+ }
+ for(let x=0;x<btn.length;x++){
+        btn[x].addEventListener("click",()=>{
+            alert("ADD TO CART")
+        })
+ }
+
+
+    // btn.addEventListener("click",()=>{
+    //       let localdata=JSON.parse(localStorage.getItem("favourites"))||[];
+    //       let ans=false;
+    //       localdata.forEach((ele)=>{
+    //         if (ele.id === element.id){
+    //           ans=true;
+    //         }
+    //       })
+    //       if (ans== true){
+    //         h1.innerText =  alert("Restaurant Already in Favourites");
+    //       }else{
+    //       favourites.push(element)
+    //       localStorage.setItem("favourites",JSON.stringify(favourites));
+    //       h1.innerText= alert("Restaurant Added To Favourites");
+    //       }
+    //     });
+</script>
+</html>
